@@ -1,0 +1,48 @@
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.1rem;
+}
+a,
+a:hover {
+  color: #00BCFA;
+}
+h1 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+h2 {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+}
+#header {
+  background-color: #00BCFA;
+}
+#header img {
+  width: 800px;
+}
+#download {
+  background-color: #2C2C2C;
+}
+#download img {
+  width: 150px;
+}
+#descritpion {
+  background-color: #fff;
+}
+#about {
+  background-color: #f1f1f1;
+  border-radius: 6px;
+  padding: 1.2rem;
+}
+#about img {
+  width: 80px;
+  height: 80px;
+}
+footer {
+  color: #888;
+  font-size: 0.8rem;
+}
+/* Redefine Bootstraps rounded for more pixels */

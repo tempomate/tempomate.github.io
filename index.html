@@ -18,63 +18,140 @@
 </head>
 <body>
 
-    <div id="header" class="d-flex py-5">
+    <div id="header" class="d-flex py-md-3 py-lg-5">
         <div class="container text-center mt-4">
             <a href="https://itunes.apple.com/us/app/tempomate/id1157672888" target="_blank">
                 <img class="img-fluid my-3" src="img/tempomate-hero.png" alt="Tempomate metronome">
             </a>
-            <h1>Temomate. A clever metronome for Mac.</h1>
+            <h1>Temomate. A clever metronome for Mac. <a href="https://itunes.apple.com/us/app/tempomate/id1157672888" target="_blank"><img class="my-4" src="img/appstore_white.svg" style="height: auto; width: 121px; margin-left: 20px;" alt="Download from AppStore"></a></h1>
         </div>
     </div>
 
-    <div id="download" class="text-center">
-        <a href="https://itunes.apple.com/us/app/tempomate/id1157672888" target="_blank">
-            <img class="my-4" src="img/appstore.svg" alt="Download from AppStore">
-        </a>
-    </div>
-
-    <div id="description">
+    <a id="help"></a>
+    <div id="description" class="pt-3 pt-lg-5">
         <div class="container mt-5 mb-5">
-            <div class="row">
-                <div class="col-sm-6 col-md-4 text-center">
-                    <h2>Accents</h2>
-                    <p>Spice it up with various time signatures, accents and rests.</p>
+            <div class="row mb-4">
+                <div class="col-lg-6 d-flex flex-column justify-content-center">
+                    <h2 class="mt-3 mt-lg-0">Setting Tempo</h2>
+                    <ul class="mb-0 pl-4">
+                        <li>Click arrows to change, click and hold to scroll.</li>
+                        <li>Click and scrub the tempo number vertically.</li>
+                        <li><code>Up</code> / <code>Down</code> arrow keys change by 1 bpm, <code>Left</code> / <code>Right</code> change by 5 bpm. Press <code>Enter</code> to type an exact value.</li>
+                        <li>Click the TAP button or <code>T</code> / <code>Backspace</code> on a keyboard at least three times in a row.</li>
+                    </ul>
                 </div>
-                <div class="col-sm-6 col-md-4 text-center">
-                    <h2>Auto Mode</h2>
-                    <p>Increases tempo periodically for serious speed training. Just set the bpm amount and time interval.</p>
-                </div>
-                <div class="col-sm-6 col-md-4 text-center">
-                    <h2>Presets</h2>
-                    <p>Save your favourite tempos, time signatures and auto mode settings in nine memory slots.</p>
-                </div>
-                <div class="col-sm-6 col-md-4 text-center">
-                    <h2>Tap Tempo</h2>
-                    <p>Helps you find the precise tempo in your head or in that song. During use, the clicks synchronise to your tapping.</p>
-                </div>
-                <div class="col-sm-6 col-md-4 text-center">
-                    <h2>Full Screen Mode</h2>
-                    <p>Full screen mode. Because you are not sitting in front of computer all the time, right?</p>
-                </div>
-                <div class="col-sm-6 col-md-4 text-center">
-                    <h2>Mouse and Keys</h2>
-                    <p>Full operation using both mouse and keyboard.</p>
+                <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
+                    <img class="video-placeholder mt-4 mt-lg-0" src="img/placeholder-tempo.png" alt="">
+                    <video width="500" height="250" preload="auto" muted style="display: none;">
+                        <source src="video/tempo.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
+            <div class="row mb-4">
+                <div class="col-lg-6 d-flex flex-column justify-content-center">
+                    <h2 class="mt-4 mt-lg-0">Subdivisions</h2>
+                    <ul class="mb-0 pl-4">
+                        <li>Click on notes to cycle through subdivisions.</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
+                    <img class="video-placeholder mt-4 mt-lg-0" src="img/placeholder-subdivisions.png" alt="">
+                    <video width="500" height="250" preload="auto" muted style="display: none;">
+                        <source src="video/subdivisions.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-lg-6 d-flex flex-column justify-content-center">
+                    <h2 class="mt-4 mt-lg-0">Accents & Rests</h2>
+                    <ul class="mb-0 pl-4">
+                        <li>Click small buttons below notes to add an accent or rest.</li>
+                        <li>Right-click on notes to quickly add accent to the first subdivision.</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
+                    <img class="video-placeholder mt-4 mt-lg-0" src="img/placeholder-accents.png" alt="">
+                    <video width="500" height="250" preload="auto" muted style="display: none;">
+                        <source src="video/accents-rests.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-lg-6 d-flex flex-column justify-content-center">
+                    <h2 class="mt-4 mt-lg-0">Time Signature</h2>
+                    <ul class="mb-0 pl-4">
+                        <li>Click on the time signature to reveal available options.</li>
+                        <li>For 5/8 and 7/8, click the button below the time signature to cycle through different groupings.</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
+                    <img class="video-placeholder mt-4 mt-lg-0" src="img/placeholder-signature.png" alt="">
+                    <video width="500" height="250" preload="auto" muted style="display: none;">
+                        <source src="video/signatures.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-lg-6 d-flex flex-column justify-content-center">
+                    <h2 class="mt-4 mt-lg-0">Auto Mode</h2>
+                    <ul class="mb-0 pl-4">
+                        <li>Auto mode changes tempo periodically.</li>
+                        <li>Press the AUTO button or <code>A</code> to activate.</li>
+                        <li>Click on bpm and time interval to type in a value or scrub numbers vertically.</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-lg-6">
+                    <h2 class="mt-4">Sounds & Volume</h2>
+                    <ul class="mb-0 pl-4">
+                        <li><code>Spacebar</code> to start and stop metromone.</li>
+                        <li>Drag slider or press <code>Cmd</code> plus arrow keys to adjust the volume.</li>
+                        <li><code>M</code> to mute.</li>
+                       <li>You'll find a list of sounds from Settings and from the menu.</li>
+                       <li><code>O</code> cycles through sounds.</li>
+                       <li>There's a pan option in Setting and from the menu.</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="mt-5">Presets</h2>
+                    <ul class="mb-0 pl-4">
+                        <li>There are 9 memory slots to save the tempo, signature and divisions into.</li>
+                        <li><code>S</code> saves the current preset.</li>
+                        <li><code>Cmd+1</code> .. <code>Cmd+9</code> save current settings as another preset.</li>
+                        <li><code>1</code> .. <code>9</code> loads a preset.</li>
+                        <li><code>P</code> cycles through presets.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="mt-4">Display Options</h2>
+                    <ul class="mb-0 pl-4">
+                        <li>Tempomate prevents your computer from entering sleep mode while the metronome is playing.</li>
+                        <li>You can also prevent the display from turning off from Settings or from the application menu.</li>
+                        <li><code>Cmd+T</code> forces the window to float on top of others.</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-6">
+                    <h2 class="mt-4 d-none d-lg-inline-block">&nbsp;</h2>
+                    <ul class="mb-0 pl-4">
+                        <li><code>L</code> toggles click light.</li>
+                        <li><code>F</code> enters or leaves full-screen mode.</li>
+                        <li>You can resize the window.</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <p class="mt-5">You'll find many options also from the application menu. Happy practising!</p>
         </div> <!-- container -->
     </div>
-    
-    <div class="mb-5">
-        <div id="about" class="container d-flex align-items-center">
-            <div class="">
-                <img class="mr-3" src="img/about.jpg" alt="About Tempomate metronome">
-            </div>
-            <div class="">
-                Hi, my name is René. I'm a guitarist and software enthusiast. Tempomate is my years-long journey on creating the most feature-rich and aesthetically pleasing practice companion for Mac. Most of my time I spend as founder and CEO of <a href="https://fienta.com/organizer?utm_source=tempomate" target="_blank">fienta.com</a> event ticketing platform. 
-            </div>
-        </div>
-    </div>
-    
+
     <footer>
         <div class="container my-5">
             <div class="row">
@@ -93,16 +170,43 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+    <script>
+        $('.video-placeholder').on('click', function(e) {
+            ph = $(this);
+            ph.hide();
+            video = ph.parent().find('video').first();
+            video.show().trigger("play").bind('ended', function () {
+                ph.show();
+                video.hide();
+                this.currentTime = 0;
+            });
+        });
+
+        $('video').on('click', function(e) {
+
+            var media = $(this).get(0);
+            media.pause();
+            media.currentTime = 0;
+
+            $(this).hide();
+
+            ph = $(this).parent().find('.video-placeholder').first();
+            ph.show();
+
+        });
+    </script>
+
+
 <!-- Analytics -->
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  
+
     ga('create', 'UA-84817127-1', 'auto');
     ga('send', 'pageview');
-  
+
   </script>
   <!-- Analytics END -->
 

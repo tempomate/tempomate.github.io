@@ -1,22 +1,28 @@
 body {
     background-color: #fff;
     color: #333;
+
+    background-color: #333;
+    color: #fff;
+
+
     font-family: 'Nunito', sans-serif;
     font-size: 1.1rem;
 }
 
 a, a:hover {
-    color: #00BCFA; 
+    color: #00BCFA;
 }
 
 h1 {
-    color: #fff;
-    font-size: 1.2rem;
+    color: #1f1f1f;
+    font-size: 1.6rem;
     font-weight: 400;
 }
 h2 {
     font-size: 1.6rem;
-    margin-top: 1rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
 
 #header {
@@ -24,26 +30,35 @@ h2 {
     img {
         width: 800px; // works as max-width
     }
-} 
-
-#download {
-    background-color: #2C2C2C;
-    img {
-        width: 150px;
-    }
 }
 
-#descritpion {
-    background-color: #fff;
+#description {
+    // background-color: #fff;
+    color: #b3b3b3;
 }
 
-#about {
-    background-color: #f1f1f1;
-    border-radius: 6px;
-    padding: 1.2rem;
-    img {
-        width: 80px;
-        height: 80px
+code {
+    background-color: #292929;
+    color: #b3b3b3;
+    padding: 0.08rem 0.35rem;
+    border-radius: 3px;
+    font-size: 80%;
+}
+
+video, .video-placeholder {
+    width: 380px; // works like max-width
+    height: auto;
+    border-radius: 9px;
+}
+
+.video-placeholder {
+    border: 1px solid #2e2e2e;
+    background-color: #1f1f1f;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: opacity 0.8s ease;
+    &:hover {
+        opacity: 1;
     }
 }
 
@@ -51,6 +66,7 @@ footer {
     color: #888;
     font-size: 0.8rem;
 }
+
 
 
 // ************************************************************************

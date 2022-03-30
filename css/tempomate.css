@@ -41,12 +41,12 @@ video,
   width: 380px;
   height: auto;
   border-radius: 9px;
+  cursor: pointer;
 }
 .video-placeholder {
   border: 1px solid #2e2e2e;
   background-color: #1f1f1f;
   opacity: 0.8;
-  cursor: pointer;
   transition: opacity 0.8s ease;
 }
 .video-placeholder:hover {

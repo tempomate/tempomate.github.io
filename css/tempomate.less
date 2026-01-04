@@ -25,6 +25,13 @@ h2 {
     margin-bottom: 1rem;
 }
 
+/* Bootstrap 5 adds an XXL container width; cap it to match Bootstrap 4's max width */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
 #header {
     background-color: #00BCFA;
     img {
@@ -34,12 +41,12 @@ h2 {
 
 #description {
     // background-color: #fff;
-    color: #b3b3b3;
+    color: #eee;
 }
 
 code {
-    background-color: #292929;
-    color: #b3b3b3;
+    background-color: #555;
+    color: #eee;
     padding: 0.08rem 0.35rem;
     border-radius: 3px;
     font-size: 80%;
@@ -54,17 +61,29 @@ video, .video-placeholder {
 
 .video-placeholder {
     border: 1px solid #2e2e2e;
-    background-color: #1f1f1f;
-    opacity: 0.8;
+    background-color: #171717;
+    opacity: 1;
     transition: opacity 0.8s ease;
     &:hover {
         opacity: 1;
     }
 }
+.video-placeholder:focus,
+.video-placeholder:focus-visible {
+    outline: 2px solid #00BCFA;
+    outline-offset: 3px;
+    opacity: 1;
+}
 
 footer {
     color: #888;
     font-size: 0.8rem;
+}
+footer a,
+footer a:hover,
+footer a:focus,
+footer a:focus-visible {
+    text-decoration: none;
 }
 
 

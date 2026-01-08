@@ -182,11 +182,30 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <script>
+        function stopAllVideos(exceptVideoEl) {
+            $('video').each(function() {
+                const media = this;
+                if (exceptVideoEl && media === exceptVideoEl) return;
+
+                media.pause();
+                media.currentTime = 0;
+
+                const $video = $(media);
+                $video.hide();
+
+                const $ph = $video.parent().find('.video-placeholder').first();
+                $ph.show();
+            });
+        }
+
         $('.video-placeholder').on('click', function(e) {
             const ph = $(this);
-            ph.hide();
             const video = ph.parent().find('video').first();
-            video.show().trigger("play").bind('ended', function () {
+
+            stopAllVideos(video.get(0));
+
+            ph.hide();
+            video.show().trigger("play").bind('ended', function() {
                 ph.show();
                 video.hide();
                 this.currentTime = 0;

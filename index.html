@@ -6,38 +6,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/tempomate.css?v=20220330">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
-    <title>Tempomate — A clever metronome for Mac</title>
-    <meta name="description" content="Tempomate is a clever and beautiful metronome for Mac.">
-    <link rel="canonical" href="https://tempomate.com/">
-    <meta name="theme-color" content="#00BCFA">
-
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Tempomate">
-    <meta property="og:title" content="Tempomate — A clever metronome for Mac">
-    <meta property="og:description" content="Tempomate is a clever and beautiful metronome for Mac.">
-    <meta property="og:url" content="https://tempomate.com/">
-    <meta property="og:image" content="https://tempomate.com/img/tempomate-hero.png">
+    <title>Tempomate</title>
+    <meta name="description" content="Tempomate is a clever, beautiful metronome for Mac.">
 </head>
 <body>
 
     <div id="header" class="d-flex py-md-3 py-lg-5">
         <div class="container text-center mt-4">
-            <a href="https://itunes.apple.com/us/app/tempomate/id1157672888" target="_blank" rel="noopener noreferrer" aria-label="Open Tempomate on the Mac App Store">
-                <img class="img-fluid my-3" src="img/tempomate-hero.png" alt="Tempomate metronome for Mac" decoding="async" fetchpriority="high">
+            <a href="https://itunes.apple.com/us/app/tempomate/id1157672888" target="_blank">
+                <img class="img-fluid my-3" src="img/tempomate-hero.png" alt="Tempomate metronome">
             </a>
-            <h1>
-                Tempomate. A clever metronome for Mac.
-                <a href="https://itunes.apple.com/us/app/tempomate/id1157672888" target="_blank" rel="noopener noreferrer" aria-label="Download Tempomate from the Mac App Store">
-                    <img class="my-4" src="img/appstore_transparent.svg" style="height: auto; width: 121px; margin-left: 20px;" alt="Download on the Mac App Store" decoding="async">
-                </a>
-            </h1>
+            <h1>Tempomate — a clever metronome for Mac. <a href="https://itunes.apple.com/us/app/tempomate/id1157672888" target="_blank"><img class="my-4" src="img/appstore_transparent.svg" style="height: auto; width: 121px; margin-left: 20px;" alt="Download on the App Store"></a></h1>
         </div>
     </div>
 
@@ -47,16 +33,18 @@
             <div class="row mb-4">
                 <div class="col-lg-6 d-flex flex-column justify-content-center">
                     <h2 class="mt-3 mt-lg-0">Setting Tempo</h2>
-                    <ul class="mb-0 ps-4">
-                        <li>Click arrows to change, click and hold to scroll.</li>
-                        <li>Click and scrub the tempo number vertically.</li>
-                        <li><code>Up</code> / <code>Down</code> arrow keys change by 1 bpm, <code>Left</code> / <code>Right</code> change by 5 bpm. Press <code>Enter</code> to type an exact value.</li>
-                        <li>Click the TAP button or <code>T</code> / <code>Backspace</code> on a keyboard at least three times in a row.</li>
+                    <ul class="mb-0 pl-4">
+                        <li>Click the arrows to change the tempo. Click and hold to scroll.</li>
+                        <li>Click the tempo number and drag up/down to scrub.</li>
+                        <li>Keyboard: <code>Up</code>/<code>Down</code> changes tempo by 1 BPM.</li>
+                        <li>Keyboard: <code>Left</code>/<code>Right</code> snaps to the nearest 5 BPM step first, then changes by 5 BPM.</li>
+                        <li>Keyboard: Press <code>Enter</code> to type an exact value.</li>
+                        <li>Tap the <strong>TAP</strong> button at least three times in a row. Keyboard: <code>T</code> / <code>Backspace</code>.</li>
                     </ul>
                 </div>
                 <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
-                    <img class="video-placeholder mt-4 mt-lg-0" src="img/placeholder-tempo.png" alt="Play Setting Tempo demo video" loading="lazy" decoding="async" role="button" tabindex="0">
-                    <video width="500" height="250" preload="none" muted playsinline style="display: none;" aria-label="Setting Tempo demo video">
+                    <img class="video-placeholder mt-4 mt-lg-0" src="img/placeholder-tempo.png" alt="Video: setting tempo">
+                    <video width="500" height="250" preload="auto" muted style="display: none;">
                         <source src="video/tempo.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -64,13 +52,16 @@
             <div class="row mb-4">
                 <div class="col-lg-6 d-flex flex-column justify-content-center">
                     <h2 class="mt-4 mt-lg-0">Subdivisions</h2>
-                    <ul class="mb-0 ps-4">
-                        <li>Click on notes to cycle through subdivisions.</li>
+                    <ul class="mb-0 pl-4">
+                        <li>Click the note icon to change the subdivision for that beat.</li>
+                        <li>First click: two eighth notes “ti-ti”.</li>
+                        <li>Next click: triplets.</li>
+                        <li>Next click: four sixteenth notes.</li>
                     </ul>
                 </div>
                 <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
-                    <img class="video-placeholder mt-4 mt-lg-0" src="img/placeholder-subdivisions.png" alt="Play Subdivisions demo video" loading="lazy" decoding="async" role="button" tabindex="0">
-                    <video width="500" height="250" preload="none" muted playsinline style="display: none;" aria-label="Subdivisions demo video">
+                    <img class="video-placeholder mt-4 mt-lg-0" src="img/placeholder-subdivisions.png" alt="Video: changing subdivisions">
+                    <video width="500" height="250" preload="auto" muted style="display: none;">
                         <source src="video/subdivisions.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -78,14 +69,14 @@
             <div class="row mb-4">
                 <div class="col-lg-6 d-flex flex-column justify-content-center">
                     <h2 class="mt-4 mt-lg-0">Accents & Rests</h2>
-                    <ul class="mb-0 ps-4">
-                        <li>Click small buttons below notes to add an accent or rest.</li>
-                        <li>Right-click on notes to quickly add accent to the first subdivision.</li>
+                    <ul class="mb-0 pl-4">
+                        <li>Click the small buttons below a note to add an accent or a rest.</li>
+                        <li>Right-click a note to quickly accent the first subdivision.</li>
                     </ul>
                 </div>
                 <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
-                    <img class="video-placeholder mt-4 mt-lg-0" src="img/placeholder-accents.png" alt="Play Accents & Rests demo video" loading="lazy" decoding="async" role="button" tabindex="0">
-                    <video width="500" height="250" preload="none" muted playsinline style="display: none;" aria-label="Accents and Rests demo video">
+                    <img class="video-placeholder mt-4 mt-lg-0" src="img/placeholder-accents.png" alt="Video: accents and rests">
+                    <video width="500" height="250" preload="auto" muted style="display: none;">
                         <source src="video/accents-rests.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -93,14 +84,14 @@
             <div class="row mb-4">
                 <div class="col-lg-6 d-flex flex-column justify-content-center">
                     <h2 class="mt-4 mt-lg-0">Time Signature</h2>
-                    <ul class="mb-0 ps-4">
-                        <li>Click on the time signature to reveal available options.</li>
-                        <li>For 5/8 and 7/8, click the button below the time signature to cycle through different groupings.</li>
+                    <ul class="mb-0 pl-4">
+                        <li>Click the time signature to see available options.</li>
+                        <li>For 5/8 and 7/8, use the button below the time signature to cycle through groupings.</li>
                     </ul>
                 </div>
                 <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
-                    <img class="video-placeholder mt-4 mt-lg-0" src="img/placeholder-signature.png" alt="Play Time Signature demo video" loading="lazy" decoding="async" role="button" tabindex="0">
-                    <video width="500" height="250" preload="none" muted playsinline style="display: none;" aria-label="Time Signature demo video">
+                    <img class="video-placeholder mt-4 mt-lg-0" src="img/placeholder-signature.png" alt="Video: time signatures">
+                    <video width="500" height="250" preload="auto" muted style="display: none;">
                         <source src="video/signatures.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -108,16 +99,16 @@
             <div class="row mb-4">
                 <div class="col-lg-6 d-flex flex-column justify-content-center">
                     <h2 class="mt-4 mt-lg-0">Auto Mode</h2>
-                    <ul class="mb-0 ps-4">
-                        <li>Auto mode has two variants: one mutes metronome clicks, the other increases or decreases tempo.</li>
-                        <li>Press the AUTO button or <code>A</code> to activate.</li>
-                        <li>Change modes by clicking on MUTE/ADD/BAR/SEC labels.</li>
-                        <li>Change values by clicking and typing or scrubbing numbers vertically.</li>
+                    <ul class="mb-0 pl-4">
+                        <li>Auto mode has two variants: one mutes clicks, and the other gradually increases or decreases tempo.</li>
+                        <li>Press <strong>AUTO</strong> to activate. Keyboard: <code>A</code>.</li>
+                        <li>Switch modes by clicking the <strong>MUTE</strong>/<strong>ADD</strong>/<strong>BAR</strong>/<strong>SEC</strong> labels.</li>
+                        <li>Change values by clicking to type, or by scrubbing numbers vertically.</li>
                     </ul>
                 </div>
                 <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
-                    <img class="video-placeholder mt-4 mt-lg-0" src="img/placeholder-auto.png" alt="Play Auto Mode demo video" loading="lazy" decoding="async" role="button" tabindex="0">
-                    <video width="500" height="250" preload="none" muted playsinline style="display: none;" aria-label="Auto Mode demo video">
+                    <img class="video-placeholder mt-4 mt-lg-0" src="img/placeholder-auto.png" alt="Video: auto mode">
+                    <video width="500" height="250" preload="auto" muted style="display: none;">
                         <source src="video/auto.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -125,21 +116,22 @@
             <div class="row mb-4">
                 <div class="col-lg-6">
                     <h2 class="mt-4">Sounds & Volume</h2>
-                    <ul class="mb-0 ps-4">
-                        <li><code>Spacebar</code> to start and stop metronome.</li>
-                        <li>Drag slider or press <code>Cmd</code> plus arrow keys to adjust the volume.</li>
-                        <li><code>M</code> to mute.</li>
-                       <li>You'll find a list of sounds from Settings and from the menu.</li>
-                       <li><code>O</code> cycles through sounds.</li>
-                       <li>There's a pan option in Settings and from the menu.</li>
+                    <ul class="mb-0 pl-4">
+                        <li>Press <code>Space</code> to start/stop the metronome.</li>
+                        <li>Drag the slider, or press <code>Cmd</code> + arrow keys, to adjust the volume.</li>
+                        <li>Press <code>M</code> to mute.</li>
+                        <li>Choose a sound from <strong>Settings</strong> or the app menu.</li>
+                        <li>Press <code>O</code> to cycle through sounds.</li>
+                        <li>You can choose the sound output device in <strong>Settings</strong>.</li>
+                        <li>Pan is available in <strong>Settings</strong> and in the app menu.</li>
                     </ul>
                 </div>
                 <div class="col-lg-6">
                     <h2 class="mt-5">Presets</h2>
-                    <ul class="mb-0 ps-4">
-                        <li>There are 9 memory slots to save the tempo, signature and divisions into.</li>
-                        <li><code>S</code> saves the current preset.</li>
-                        <li><code>Cmd+1</code> .. <code>Cmd+9</code> save current settings as another preset.</li>
+                    <ul class="mb-0 pl-4">
+                        <li>There are 9 memory slots for saving tempo, time signature, and subdivisions.</li>
+                        <li>Press <code>S</code> to save the current preset.</li>
+                        <li><code>Cmd+1</code> .. <code>Cmd+9</code> save the current settings to a specific slot.</li>
                         <li><code>1</code> .. <code>9</code> loads a preset.</li>
                         <li><code>P</code> cycles through presets.</li>
                     </ul>
@@ -149,25 +141,25 @@
             <div class="row">
                 <div class="col-lg-6">
                     <h2 class="mt-4">Display Options</h2>
-                    <ul class="mb-0 ps-4">
+                    <ul class="mb-0 pl-4">
                         <li>Tempomate prevents your computer from entering sleep mode while the metronome is playing.</li>
-                        <li>You can also prevent the display from turning off from Settings or from the application menu.</li>
-                        <li><code>Cmd+T</code> forces the window to float on top of others.</li>
+                        <li>You can also prevent the display from turning off in <strong>Settings</strong> or from the app menu.</li>
+                        <li><code>Cmd+T</code> keeps the window floating on top of others.</li>
                     </ul>
                 </div>
 
                 <div class="col-lg-6">
                     <h2 class="mt-4 d-none d-lg-inline-block">&nbsp;</h2>
-                    <ul class="mb-0 ps-4">
-                        <li><code>L</code> toggles click light.</li>
+                    <ul class="mb-0 pl-4">
+                        <li><code>L</code> toggles the click light.</li>
                         <li><code>F</code> enters or leaves full-screen mode.</li>
-                        <li>You can resize the window.</li>
+                        <li>The window is resizable.</li>
                     </ul>
                 </div>
 
             </div>
 
-            <p class="mt-5">You'll find many options also from the application menu. Happy practising!</p>
+            <p class="mt-5">Many options are also available from the app menu. Happy practicing!</p>
         </div> <!-- container -->
     </div>
 
@@ -175,68 +167,43 @@
         <div class="container my-5">
             <div class="row">
                 <div class="col-lg-8">
-                    Tempomate does not collect, store or process any personal or usage-based data.
+                    Tempomate does not collect, store, or process any personal or usage-based data.
                 </div>
                 <div class="col-lg-4">
-                    <a href="https://itunes.apple.com/us/app/tempomate/id1157672888" target="_blank" rel="noopener noreferrer">Leave feedback on App Store</a> &middot;
-                    <a href="https://www.facebook.com/tempomate.metronome/" target="_blank" rel="noopener noreferrer">Tempomate on Facebook</a>
+                    <a href="https://itunes.apple.com/us/app/tempomate/id1157672888" target="_blank">Leave feedback on the App Store</a> &middot;
+                    <a href="https://www.facebook.com/tempomate.metronome/" target="_blank">Tempomate on Facebook</a>
                 </div>
             </div>
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
     <script>
-        function showVideoForPlaceholder(placeholderEl) {
-            const wrapper = placeholderEl.parentElement;
-            if (!wrapper) return;
-
-            const videoEl = wrapper.querySelector('video');
-            if (!videoEl) return;
-
-            placeholderEl.style.display = 'none';
-            videoEl.style.display = '';
-
-            // Avoid eager downloads until user interacts
-            videoEl.load();
-            const playPromise = videoEl.play();
-            if (playPromise && typeof playPromise.catch === 'function') {
-                playPromise.catch(function () {});
-            }
-
-            videoEl.onended = function () {
-                placeholderEl.style.display = '';
-                videoEl.style.display = 'none';
-                videoEl.currentTime = 0;
-            };
-        }
-
-        function hideVideo(videoEl) {
-            videoEl.pause();
-            videoEl.currentTime = 0;
-            videoEl.style.display = 'none';
-
-            const wrapper = videoEl.parentElement;
-            const placeholderEl = wrapper ? wrapper.querySelector('.video-placeholder') : null;
-            if (placeholderEl) placeholderEl.style.display = '';
-        }
-
-        document.querySelectorAll('.video-placeholder').forEach(function (placeholderEl) {
-            placeholderEl.addEventListener('click', function () {
-                showVideoForPlaceholder(placeholderEl);
-            });
-
-            placeholderEl.addEventListener('keydown', function (e) {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    showVideoForPlaceholder(placeholderEl);
-                }
+        $('.video-placeholder').on('click', function(e) {
+            const ph = $(this);
+            ph.hide();
+            const video = ph.parent().find('video').first();
+            video.show().trigger("play").bind('ended', function () {
+                ph.show();
+                video.hide();
+                this.currentTime = 0;
             });
         });
 
-        document.querySelectorAll('video').forEach(function (videoEl) {
-            videoEl.addEventListener('click', function () {
-                hideVideo(videoEl);
-            });
+        $('video').on('click', function(e) {
+
+            const media = $(this).get(0);
+            media.pause();
+            media.currentTime = 0;
+
+            $(this).hide();
+
+            const ph = $(this).parent().find('.video-placeholder').first();
+            ph.show();
+
         });
     </script>
 
